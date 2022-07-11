@@ -9,3 +9,22 @@ div{
 h1,h3{
     display: inline;
 }
+
+img{
+    width: 100px;
+}
+
+.contenedor{
+    display: flex;
+    align-items: center;
+}
+
+.btnAccion{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.editarContenedor{
+    display: flex;
+    align-items: center;
+}

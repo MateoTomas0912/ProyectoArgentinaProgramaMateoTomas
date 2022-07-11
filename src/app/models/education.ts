@@ -2,6 +2,6 @@ export interface Education{
     idEdu:number;
     tituloEdu:string;
     fechaEdu:number;
-    descripcionEdu:string;
+    descEdu:string;
     imagenEdu:string;
 }

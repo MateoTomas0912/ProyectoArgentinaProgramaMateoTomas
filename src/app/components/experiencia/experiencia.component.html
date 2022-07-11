@@ -1,33 +1,22 @@
 <div class="row">
-     <h1>Experiencia laboral</h1>
+     <div class="editarContenedor">
+          <h1>Experiencia laboral</h1>
+          <a><img src="https://w7.pngwing.com/pngs/535/334/png-transparent-computer-icons-add-button-logo-number-add-button-thumbnail.png" class="btnAccion"></a>
+     </div>
     <div class="col-lg-1"></div>
-    <div class="col-lg-11">
-         <ul>
-              <li><h1>Trabajo1</h1> - <h3>(years)</h3></li>
-              <p>Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit.Laboriosam atque fuga
-              asperiores sit,esse debitis illum.
-              Laboriosam quos,perspiciatis deserunt sequi
-              nulla officiis aspernatur cum,consectetur,
-              error venian excepturi laudantium.</p>
-         </ul>
-         <ul>
-            <li><h1>Trabajo2</h1> - <h3>(years)</h3></li>
-            <p>Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit.Laboriosam atque fuga
-            asperiores sit,esse debitis illum.
-            Laboriosam quos,perspiciatis deserunt sequi
-            nulla officiis aspernatur cum,consectetur,
-            error venian excepturi laudantium.</p>
-       </ul>
-       <ul>
-        <li><h1>Trabajo3</h1> - <h3>(years)</h3></li>
-        <p>Lorem ipsum dolor sit amet consectetur,
-        adipisicing elit.Laboriosam atque fuga
-        asperiores sit,esse debitis illum.
-        Laboriosam quos,perspiciatis deserunt sequi
-        nulla officiis aspernatur cum,consectetur,
-        error venian excepturi laudantium.</p>
-        </ul>
+    <div class="col-lg-11" *ngFor="let experiencia of experiencias">
+     <ul style="margin-left: 70px">
+          <div style="display: flex">
+               <li><h1>{{experiencia.tituloExp}}</h1> - <h3>({{experiencia.fechaExp}})</h3></li>
+               <div class="editarContenedor">
+                    <button class="btn"><img class="btnAccion" src="https://cdn-icons-png.flaticon.com/512/84/84380.png"></button>
+                    <button class="btn"><img class="btnAccion" src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png"></button>
+               </div>
+          </div>
+          <div class="contenedor">
+               <p>{{experiencia.descExp}}</p>
+               <img src="{{experiencia.imagenExp}}" style="margin-left: 100px">
+          </div>
+     </ul>
     </div>
 </div>

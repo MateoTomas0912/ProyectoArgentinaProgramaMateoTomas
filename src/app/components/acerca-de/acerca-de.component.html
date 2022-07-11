@@ -3,12 +3,16 @@
         <img src={{usuario.fotoPerfil}} class="img-fluid" id="fotoPerfil">
     </div>
     <div *ngIf='usuario' class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <p id="nombre">{{usuario.nombre}}</p>
-        <p>{{usuario.titulo}</p>  
+        <p id="nombre">{{usuario.nombre}}  {{usuario.apellido}}</p>
+        <p>{{usuario.titulo}}</p>  
     </div>
     <div *ngIf='usuario' class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
         <span>
-            <h1>Acerca de mi</h1>
+            <div class="editarContenedor">
+                <h1>Acerca de mi</h1>
+                <button class="btn"><img class="btnAccion" src="https://cdn-icons-png.flaticon.com/512/84/84380.png"></button>
+                <button class="btn"><img class="btnAccion" src="https://cdn-icons-png.flaticon.com/512/1214/1214594.png"></button>
+            </div>
             <p>{{usuario.descripcion}}</p>
         </span>
     </div>

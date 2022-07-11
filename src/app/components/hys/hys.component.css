@@ -1,4 +1,9 @@
-.row{
-    background-color:"#alb5cb";
-    padding: 20px;
+.btnAccion{
+    width: 30px;
+    margin-left: 20px;
+}
+
+.editarContenedor{
+    display: flex;
+    align-items: center;
 }
