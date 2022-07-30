@@ -5,12 +5,14 @@
     </div>
     <div class="redes">
         <div>
-            <a href=""><img src="../../../assets/linkedin.png" id="linkedin" alt=""></a>
-            <a href=""><img src="../../../assets/twitter.png" id="twitter" alt=""></a>
-            <a href=""><img src="../../../assets/instagram.png" id="instagram" alt=""></a>
-            <a href=""><img src="../../../assets/github.png" id="github" alt=""></a>
-            <a href=""><img src="../../../assets/facebook.png" id="facebook" alt=""></a>
-            <button type="button" class="btn btn-outline-light">INGRESO</button>
+            <a href="https://www.linkedin.com/in/mateo-tom%C3%A1s-2b9b45231/"><img src="../../../assets/linkedin.png" id="linkedin" alt=""></a>
+            <a href="https://www.instagram.com/matotomas/"><img src="../../../assets/instagram.png" id="instagram" alt=""></a>
+            <a href="https://github.com/MateoTomas0912"><img src="../../../assets/github.png" id="github" alt=""></a>
+            <a href="https://www.facebook.com/mateo.tomas.756/"><img src="../../../assets/facebook.png" id="facebook" alt=""></a>
+            <button type="button" class="btn btn-outline-light" *ngIf="userLogged; else btnIngresar" (click)="logout()">LOGOUT</button>
+            <ng-template #btnIngresar>
+                <button type="button" class="btn btn-outline-light" routerLink="/login">LOGGIN</button>
+            </ng-template>
         </div>
     </div>
 </div>

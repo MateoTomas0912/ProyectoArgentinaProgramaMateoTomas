@@ -2,6 +2,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Education } from 'src/app/models/education';
+import { AuthService } from 'src/app/services/auth.service';
 import { EducationService } from 'src/app/servicios/education.service';
 
 @Component({
@@ -15,7 +16,8 @@ export class EducacionComponent implements OnInit {
   public editEducation:Education | undefined;
   public deleteEducation:Education | undefined;
 
-  constructor(private educationService:EducationService) { }
+  constructor(private educationService:EducationService, private authService: AuthService) { }
+  userLogged = this.authService.getUserLogged();
 
   ngOnInit(): void {
     this.getEducations();
@@ -53,6 +55,7 @@ export class EducacionComponent implements OnInit {
   }
 
   public onAddEducation(addForm:NgForm){
+    console.log("entro");
     document.getElementById('add-education-form')?.click();
     this.educationService.addEducacion(addForm.value).subscribe({
       next: (response:Education)=>{
