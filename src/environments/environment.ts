@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'https://argentinaprogramamateotomas.herokuapp.com/'
+  apiBaseUrl: 'https://argentinaprogramamateotomas.herokuapp.com'
 };
 
 /*

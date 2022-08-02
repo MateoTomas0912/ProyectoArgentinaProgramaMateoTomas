@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: 'https://argentinaprogramamateotomas.herokuapp.com/'
+  apiBaseUrl: 'https://argentinaprogramamateotomas.herokuapp.com'
 };
